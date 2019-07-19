@@ -1,0 +1,56 @@
+{
+  "name": "sober-cli",
+  "version": "1.0.0",
+  "description": "Sober learns to set up a simple cli tool",
+  "main": "bin/sober.js",
+  "bin": {
+    "sober-cli": "bin/sober.js"
+  },
+  "scripts": {
+    "pretest": "eslint .",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "coveralls": "jest --coverage && cat coverage/lcov.info | coveralls && rm -rf coverage"
+  },
+  "keywords": [
+    "sober",
+    "cli"
+  ],
+  "author": "oGsLP",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "inquirer": "^6.5.0",
+    "shelljs": "^0.8.3",
+    "tracer": "^0.9.8"
+  },
+  "engines": {
+    "npm": ">= 8.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-config-xo": "^0.26.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2"
+  },
+  "eslintConfig": {
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": "error",
+      "camelcase": "off"
+    },
+    "plugins": [
+      "prettier"
+    ]
+  },
+  "repository": "oGsLP/sober-cli"
+}
