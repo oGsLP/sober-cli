@@ -1,10 +1,10 @@
 {
   "name": "sober-cli",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Sober learns to set up a simple cli tool",
   "main": "bin/sober.js",
   "bin": {
-    "sober-cli": "bin/sober.js"
+    "sober": "bin/sober.js"
   },
   "scripts": {
     "pretest": "eslint .",
@@ -19,7 +19,10 @@
   "author": "oGsLP",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^2.4.2",
     "commander": "^2.20.0",
+    "didyoumean": "^1.2.1",
+    "envinfo": "^7.3.1",
     "inquirer": "^6.5.0",
     "shelljs": "^0.8.3",
     "tracer": "^0.9.8"
@@ -46,7 +49,9 @@
     },
     "rules": {
       "prettier/prettier": "error",
-      "camelcase": "off"
+      "camelcase": "off",
+      "capitalized-comments": "off",
+      "valid-jsdoc": "off"
     },
     "plugins": [
       "prettier"

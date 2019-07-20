@@ -1,19 +1,26 @@
-# sober-cli [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
-> Crawl info from one git account
+# sober-cli 
+
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+
+> Sober's cli tool for sober's collection of functions
 
 ## Installation
 
 ```sh
-$ npm install --save sober-cli
+$ npm install -g sober-cli
 ```
 
 ## Usage
 
-```js
-const gitInfoCrawler = require('sober-cli');
-
-gitInfoCrawler('oGsLP');
+```cmd
+sober <command> [option]
 ```
+
+## Functions
+* sober-crawler <kind> [username/id]
+* checkin <kind>
+* to do
+
 ## License
 
 MIT © [oGsLegolas](oGsLP.github.io)
